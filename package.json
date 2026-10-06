@@ -1,0 +1,52 @@
+{
+  "name": "remote-mcp-server-template",
+  "version": "0.1.0",
+  "description": "Production-ready starting point for a remote MCP server: Streamable HTTP, OAuth 2.1 resource server, TypeScript.",
+  "license": "MIT",
+  "author": "Rômulo Carvalho",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=.env src/index.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node --env-file-if-exists=.env dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "~1.32.1",
+    "express": "^5.2.1",
+    "jose": "^6.2.12",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.15",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.19.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romulorgc/remote-mcp-server-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/romulorgc/remote-mcp-server-template/issues"
+  },
+  "homepage": "https://github.com/romulorgc/remote-mcp-server-template#readme",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "oauth2",
+    "streamable-http",
+    "typescript",
+    "template"
+  ],
+  "private": "true"
+}

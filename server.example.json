@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.your-github-username/your-server-name",
+  "title": "Your Server Name",
+  "description": "One sentence on what your server does (100 characters at most).",
+  "version": "1.0.0",
+  "websiteUrl": "https://github.com/your-github-username/your-repository",
+  "repository": {
+    "url": "https://github.com/your-github-username/your-repository",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.your-domain.example/mcp"
+    }
+  ]
+}
